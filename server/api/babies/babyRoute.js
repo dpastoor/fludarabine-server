@@ -1,15 +1,14 @@
-var router = require('express').Router();
-var logger = require('../../util/logger');
-var moment = require('moment');
+import {Router} from 'express';
+import logger from '../../util/logger';
 var fixtures = {
   babies: ["John", "Jane"]
 };
 
-router.route('/')
-  .get(function(req, res, next) {
+Router().route('/')
+  .get((req, res, next) => {
     console.log('received request');
     res.json(fixtures);
     next();
   })
 
-module.exports = router;
+export default Router;
