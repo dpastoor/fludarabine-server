@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var config = require('./config/config');
 var logger = require('./util/logger');
-var api = require('./api/api');
+import api from './api/api';
 
 // setup the app middlware
 require('./middleware/appMiddleware')(app);

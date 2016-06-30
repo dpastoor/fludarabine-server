@@ -1,7 +1,7 @@
-var router = require('express').Router();
+import Router from 'express';
 import babyRoute from './babies/babyRoute'
 // api router will mount other routers
 // for all our resources
-router.use('/babies', babyRoute);
+Router().use('/babies', babyRoute);
 
-module.exports = router;
+export default Router
