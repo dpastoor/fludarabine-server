@@ -3,6 +3,6 @@ module.exports = {
   logging: true,
   seed: true,
   db: {
-    url: '<ENTER_URL>'
+    url: 'postgres://localhost:5432/fludarabinedev'
   }
 };
