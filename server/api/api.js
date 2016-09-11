@@ -2,6 +2,8 @@ import Router from 'express';
 import babyRoute from './babies/babyRoute'
 // api router will mount other routers
 // for all our resources
-Router().use('/babies', babyRoute);
+let router = Router();
 
-export default Router
+router.use('/babies', babyRoute);
+
+export default router

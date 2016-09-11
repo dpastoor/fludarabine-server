@@ -4,11 +4,13 @@ var fixtures = {
   babies: ["John", "Jane"]
 };
 
-Router().route('/')
+let router = Router()
+
+router.route('/')
   .get((req, res, next) => {
     console.log('received request');
     res.json(fixtures);
     next();
   })
 
-export default Router;
+export default router;
